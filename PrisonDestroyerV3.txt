@@ -1,0 +1,109 @@
+ --[[
+    ___  __    _  _   ___
+    |__/ | |   || || |
+    |__\ | |__ ||_|| |---   _ 
+    |__/ |___| \___/ |___  |_|  
+                           
+ --]]
+
+----------------------------------------------------------------------------------------------------------------------
+--
+--  Button.MouseButton1Down:connect(function()
+--
+--______________________	
+--	
+--	Main.Visible = false
+--______________________
+--		
+--  Code
+--	loadstring(game:HttpGet("https://raw.githubusercontent.com/ViceHuara/BlueX48EJ3432/main/BlueX48EJ3432.txt"))();
+--______________________
+--	
+-- end (dont delete)
+-- end)
+--
+-----------------------------------------------------------------------------------------------------------------------
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Launch = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Closermain = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local BlueDesc = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+-- Code Launcher 
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(59, 129, 204)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.233593076, 0, 0.208949447, 0)
+main.Size = UDim2.new(0, 354, 0, 216)
+main.Active = true
+main.Draggable = true
+
+UICorner.Parent = main
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(59, 129, 204)
+Title.BorderColor3 = Color3.fromRGB(59, 129, 204)
+Title.Position = UDim2.new(0.224648461, 0, 0.0348372795, 0)
+Title.Size = UDim2.new(0, 193, 0, 26)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "BlueX Launcher"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 18.000
+
+Launch.Name = "Launch"
+Launch.Parent = main
+Launch.BackgroundColor3 = Color3.fromRGB(59, 129, 204)
+Launch.Position = UDim2.new(0.21468927, 0, 0.328703701, 0)
+Launch.Size = UDim2.new(0, 200, 0, 50)
+Launch.Font = Enum.Font.GothamSemibold
+Launch.Text = "Launch PrisonDestroyerV3"
+Launch.TextColor3 = Color3.fromRGB(0, 0, 0)
+Launch.TextSize = 14.000
+Launch.MouseButton1Down:connect(function()
+	main.Visible = false
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ViceHuara/BlueX48EJ3432/main/BlueX48EJ3432.txt"))();
+end)
+
+
+UICorner_2.Parent = Launch
+
+Closermain.Name = "Closermain"
+Closermain.Parent = main
+Closermain.BackgroundColor3 = Color3.fromRGB(59, 129, 204)
+Closermain.Position = UDim2.new(0.918078899, 0, 0.0348372273, 0)
+Closermain.Size = UDim2.new(0, 21, 0, 20)
+Closermain.Font = Enum.Font.SourceSans
+Closermain.Text = "X"
+Closermain.TextColor3 = Color3.fromRGB(0, 0, 0)
+Closermain.TextSize = 14.000
+Closermain.MouseButton1Down:connect(function()
+	main.Visible = false
+end)
+
+
+UICorner_3.Parent = Closermain
+
+BlueDesc.Name = "BlueDesc"
+BlueDesc.Parent = main
+BlueDesc.BackgroundColor3 = Color3.fromRGB(59, 129, 204)
+BlueDesc.BorderColor3 = Color3.fromRGB(59, 129, 204)
+BlueDesc.Position = UDim2.new(0.224648461, 0, 0.840392888, 0)
+BlueDesc.Size = UDim2.new(0, 193, 0, 26)
+BlueDesc.Font = Enum.Font.GothamBold
+BlueDesc.Text = "raw, txt, lua --> launcher obfuscation"
+BlueDesc.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlueDesc.TextSize = 18.000
